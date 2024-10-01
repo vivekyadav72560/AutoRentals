@@ -9,6 +9,7 @@ export default function BikeDetails() {
   const [loading, setLoading] = useState(true);
 
   const getCarImage = (model) => {
+    model = model.trim();
     switch (model) {
       case "Passion Pro":
         return "https://m.media-amazon.com/images/I/71OdGRJefqL._AC_UF1000,1000_QL80_.jpg";
