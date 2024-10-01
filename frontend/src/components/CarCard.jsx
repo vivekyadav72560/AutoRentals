@@ -6,6 +6,7 @@ export default function CarCard({ car }) {
   const navigate = useNavigate();
 
   const getCarImage = (model) => {
+    model = model.trim(); // Remove whitespace
     switch (model) {
       case "Maruti Brezza":
         return "https://imgd-ct.aeplcdn.com/664x415/n/cw/ec/107543/brezza-exterior-left-front-three-quarter.jpeg?isig=0&q=80";
